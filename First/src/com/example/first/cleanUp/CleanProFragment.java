@@ -13,6 +13,8 @@ import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
+import android.os.Handler;
+import android.os.Message;
 import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.MotionEvent;
@@ -44,6 +46,31 @@ public class CleanProFragment extends Fragment {
 	private int currentItemPostion=9999;
 	private Map<Integer,AppInfo> cleanList;
 	private List<AppInfo> returnList;
+    private Handler handler = new Handler()
+    {
+            public void handleMessage(Message msg) 
+            {
+                    switch(msg.what)
+                    {
+                            case 0 : 
+                            	dismissPopupWindow();
+                            	currentItemPostion=9999;
+                            	appGetter = new CurrentInfoGetter(context);
+                            	list = appGetter.getAllProcess(context); 
+                            	adapter = new AppManagerAdapter();
+                            	appsView.setAdapter(null);
+                                appsView.setAdapter(adapter);
+                            	//adapter.notifyDataSetInvalidated();//重绘控件（还原到初始状态）
+                                    break;
+                                    
+                            default : 
+                                    break;
+                    }
+            };
+    };
+    public Handler getRefreshHandler(){
+    	return handler;  	
+    }
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,
 			Bundle savedInstanceState) {

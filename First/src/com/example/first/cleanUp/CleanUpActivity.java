@@ -68,27 +68,36 @@ private TabHost tabHost;
 		                  Toast.makeText(getApplicationContext(),
 	            					"杀死进程：(packageName："+info.getPackageName()+"appName:"+info.getAppName(), Toast.LENGTH_SHORT).show();
 			    	  }
+			    	  handler=cleanProFragment.getRefreshHandler();
 			      break;
 			      case 1:
 			    	  List<AppInfo> cleanListSer=(List<AppInfo>)cleanSerFragment.getView().getTag();
 			    	  for (AppInfo info : cleanListSer) {			    		  
 			    		  // 杀死进程
 		                  activityManager.killBackgroundProcesses(info.getPackageName());
+		                  Toast.makeText(getApplicationContext(),
+	            					"杀死进程：(packageName："+info.getPackageName()+"appName:"+info.getAppName(), Toast.LENGTH_SHORT).show();
 			    	  }
-			    	  Message msg = new Message();
-                      msg.what = 0;
+
                       handler=cleanSerFragment.getRefreshHandler();
-                      handler.sendMessage(msg);
+
 			      break;
 			      case 2:
 			    	  List<AppInfo> cleanListTask=(List<AppInfo>)cleanTaskFragment.getView().getTag();
 			    	  for (AppInfo info : cleanListTask) {			    		  
 			    		  // 杀死进程
 		                  activityManager.killBackgroundProcesses(info.getPackageName());
+		                  Toast.makeText(getApplicationContext(),
+	            					"杀死进程：(packageName："+info.getPackageName()+"appName:"+info.getAppName(), Toast.LENGTH_SHORT).show();
 			    	  }
+			    	  handler=cleanTaskFragment.getRefreshHandler();
 			      break;
 			      
 			      }
+				  
+		    	  Message msg = new Message();
+                  msg.what = 0;
+                  handler.sendMessage(msg);
 				
 			}
 		});
