@@ -84,6 +84,7 @@ public class CleanProFragment extends Fragment {
                 AppInfo info = (AppInfo) appsView.getItemAtPosition(position);
                 
 		        cleanList.put(position, info);
+		        returnList.clear();
 		        returnList.add(info);
 		        
                 

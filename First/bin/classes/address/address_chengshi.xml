@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<playinfos>
+           <playinfo id="">
+        <name>东方卫视 </name>
+        <address>http://zb.v.qq.com:1863/?progid=3900155972</address>
+    </playinfo>
+       <playinfo id="">
+        <name>浙江卫视 </name>
+        <address>http://c4.cztv.com/channels/101/500.flv/live.flv</address>
+    </playinfo>
+           <playinfo id="">
+        <name>深圳卫视 </name>
+        <address>http://imgWNAS0WNAS5WNASyz2.m1wscdn-h.kukuplay.com/ts/0000000001_1342936939535_1395716745733/playlist.m3u8?sn=73b7d9e46479aa0613398314a9378ce9TOTA2ODM1MmYyYjNnK</address>
+    </playinfo>
+           <playinfo id="">
+        <name>湖北影视频道</name>
+        <address>rtmp://tsl5.cutv.com/cutvChannelLive/8cinuTa</address>
+    </playinfo>
+           <playinfo id="">
+        <name>澳亚卫视 </name>
+        <address>http://tv.cutv.com/player/cv.swf</address>
+    </playinfo>
+           <playinfo id="">
+        <name>江苏卫视 </name>
+        <address>http://imgWNAS0WNAS5WNASfs4.m5wscdn-h.kukuplay.com/ts/0000000001_1342935258488_1397551226649/playlist.m3u8?sn=73b7d9e46479aa0613398314a9378ce9DOTk2MjJiNnA3bDJxX</address>
+    </playinfo>
+</playinfos>
