@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<playinfos>
+    <playinfo id="1">
+        <name>CBN新闻</name><address>rtmp://cp145180.live.edgefcs.net/live/newschannel_1_500@42322</address>
+    </playinfo>
+    <playinfo id="2">
+        <name>CBS </name>
+        <address>rtmp://cbs-live.gscdn.com/cbs-live/cbs-live.stream</address>
+    </playinfo>
+        <playinfo id="3">
+        <name>LCNTV</name>
+        <address>rtmp://cp39414.live.edgefcs.net/live/argent@9751</address>
+    </playinfo>
+    <playinfo id="4">
+        <name>欧美*CR4 </name>
+        <address>rtmp://live190.la3.origin.filmon.com:1935/live/245.high.stream</address>
+    </playinfo>
+</playinfos>

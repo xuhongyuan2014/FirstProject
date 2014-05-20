@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<playinfos>
+            <playinfo id="2">
+        <name>凤凰卫视香港台 </name>
+        <address>http://live.3gv.ifeng.com/live/hongkong.m3u8</address>
+    </playinfo>
+    <playinfo id="">
+        <name>凤凰资讯</name>
+        <address>http://img.ifeng.com/swf/ifengVplayer_v2.70.swf</address>
+    </playinfo>
+    <playinfo id="1">
+        <name>山东影视频道</name>
+        <address>rtmp://112.231.23.27:554/live/sdys</address>
+    </playinfo>
+        <playinfo id="">
+       <name>乐视自制剧</name>
+        <address>http://live.gslb.letv.com/gslb?stream_id=letv_make&amp;tag=live&amp;ext=m3u8&amp;sign=live_tv</address>
+    </playinfo>
+        <playinfo id="3">
+        <name>义乌3公共文艺</name>
+        <address>http://live-01.ywcity.cn/channels/ywtv/video_channel_03/flv:sd/live</address>
+    </playinfo>
+        <playinfo id="4">
+        <name>浙江影视频道</name>
+        <address>http://r1.cztv.com/channels/105/500.flv/live</address>
+    </playinfo>
+        <playinfo id="5">
+        <name>成都影视文艺 </name>
+        <address>http://itv.hdpfans.com/play?cdtvid=cdtv4</address>
+    </playinfo>
+        <playinfo id="">
+        <name>如东影视频道</name>
+        <address>http://live.rdxmt.com/channels/rudong/yswh/flv:sd/live</address>
+    </playinfo>
+            <playinfo id="">
+        <name>湖北影视 </name>
+        <address>http://tsl5.hls.cutv.com/cutvlive/8cinuTa/hls/live_sd.m3u8</address>
+    </playinfo>
+             <playinfo id="">
+        <name>深圳卫视 </name>
+        <address>http://live.gslb.letv.com/gslb?stream_id=shenzhen&amp;tag=live&amp;ext=m3u8</address>
+    </playinfo>
+    <playinfo id="">
+       <name>江苏卫视 </name>
+        <address>http://player.pptv.com/v/g1W0MpoAcK4Rjicc.swf</address>
+    </playinfo>
+    <playinfo id="">
+       <name>深圳卫视 </name>
+        <address>http://player.pptv.com/v/nEalI4vxYZ8CgOg.swf</address>
+    </playinfo>
+</playinfos>

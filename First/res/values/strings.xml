@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">欢迎</string>
+   <string name="btn_ok">确定</string>
+    <string name="app_name">First</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="pleaseWait">请等待……</string>
+    <string name="backgroundText">龍</string>
+    <string name="unlock_app_password_text">密码：</string>
+    <string name="browse_search_btn">搜索</string>
+
+</resources>

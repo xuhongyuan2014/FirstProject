@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="menu1">版权所有</string>
+      <string name="menu2">退出</string>
+      <string name="menu3">主界面</string>
+       <string name="copyright">MR徐-玄龙传人-2014</string>
+</resources>

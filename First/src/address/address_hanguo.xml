@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<playinfos>
+    <playinfo id="1" >
+        <name>韩国电影频道</name><address>http://ladytv.tv/channels/39/800.flv/live</address>
+    </playinfo>
+    <playinfo id="2" >
+        <name>MBN</name><address>rtmp://lm02.everyon.tv:1935/ptv2/phd17</address>
+    </playinfo>
+    <playinfo id="3" >
+        <name>MTN</name><address>rtmp://lm02.everyon.tv:1935/ptv2/phd18</address>
+    </playinfo>
+    <playinfo id="" >
+        <name>花花公子CR台</name><address>rtmp://lm02.everyon.tv:1935/ptv2/phd497</address>
+    </playinfo>
+    <playinfo id="4" >
+        <name>韩002</name><address>rtmp://lm01.everyontv.net/ptv2/phd2</address>
+    </playinfo>
+    <playinfo id="5" >
+        <name>韩003</name><address>rtmp://lm01.everyontv.net/ptv2/phd3</address>
+    </playinfo>
+        <playinfo id="" >
+        <name>韩国CR1台 </name><address>rtsp://lm02.everyon.tv:1935/ptv2/phd501</address>
+    </playinfo>
+           <playinfo id="" >
+        <name>韩国CR2台</name><address>rtsp://lm02.everyon.tv:1935/ptv/phd59</address>
+    </playinfo>
+           <playinfo id="" >
+        <name>韩国CR3台</name><address>rtsp://lm02.everyon.tv:1935/ptv/phd60</address>
+    </playinfo>
+</playinfos>

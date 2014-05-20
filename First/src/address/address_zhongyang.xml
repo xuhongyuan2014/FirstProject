@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<playinfos>
+    <playinfo id="1">
+        <name>CCTV1综合</name><address>http://imgWNAS0WNAS5WNASdy3.m4wscdn-h.kukuplay.com/ts/236_1346079639123_1384928634031/playlist.m3u8?sn=6d0649b377c6d6809f73f1b25e3afd24LMTkzODkxM3gxdDd5Y</address>
+    </playinfo>
+            <playinfo id="">
+        <name>CCTV-1综合 </name>
+        <address>http://gslb.bestvcdn.com/gslb/url/BesTV/live/live/cctv1hd/workflow04-mnf.m3u8</address>
+    </playinfo>
+         <playinfo id="">
+        <name>CCTV-1综合 </name>
+        <address>mms://officetv.bupt.edu.cn/CCTV-1-HD</address>
+    </playinfo>
+    <playinfo id="2">
+        <name>CCTV-2财经 </name>
+        <address>http://live.gslb.letv.com/gslb?stream_id=cctv2&amp;amptag=live&amp;ampext=m3u8&amp;ampsign=live_ipad</address>
+    </playinfo>
+        <playinfo id="3">
+        <name>CCTV-3综艺</name>
+        <address>http://live.gslb.letv.com/gslb?stream_id=cctv3&amp;amptag=live&amp;ampext=m3u8&amp;ampsign=live_ipad</address>
+    </playinfo>
+    <playinfo id="4">
+        <name>CCTV-4亚洲 </name>
+        <address>mms://officetv.bupt.edu.cn/CCTV-4</address>
+    </playinfo>
+       <playinfo id="">
+        <name>CCTV-6电影 </name>
+        <address>mms://officetv.bupt.edu.cn/CCTV-6-HD</address>
+    </playinfo>
+           <playinfo id="">
+        <name>CCTV-10科教 </name>
+        <address>mms://officetv.bupt.edu.cn/CCTV-10</address>
+       <playinfo id="">
+        <name>CCTV世界地理 </name>
+        <address>mms://[2001:da8:d800::43]/tv5/</address>
+    </playinfo> 
+               <playinfo id="">
+        <name>CCTV-NEWS </name>
+        <address>mms://officetv.bupt.edu.cn/CCTV-9</address>
+    </playinfo> 
+           <playinfo id="">
+        <name>湖南卫视 </name>
+        <address>mms://officetv.bupt.edu.cn/HNWS-HD</address>
+    </playinfo> 
+</playinfos>
