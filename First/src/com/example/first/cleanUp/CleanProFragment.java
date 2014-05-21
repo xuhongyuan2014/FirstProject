@@ -68,6 +68,28 @@ public class CleanProFragment extends Fragment {
                     }
             };
     };
+    private Handler missPopHandler = new Handler()
+    {
+            public void handleMessage(Message msg) 
+            {
+                    switch(msg.what)
+                    {
+                            case 0 : 
+                            	dismissPopupWindow();
+                            	/*currentItemPostion=9999;
+                            	appGetter = new CurrentInfoGetter(context);
+                            	list = appGetter.getAllProcess(context); 
+                            	adapter = new AppManagerAdapter();
+                            	appsView.setAdapter(null);
+                                appsView.setAdapter(adapter);*/
+                            	//adapter.notifyDataSetInvalidated();//重绘控件（还原到初始状态）
+                                    break;
+                                    
+                            default : 
+                                    break;
+                    }
+            };
+    };
     public Handler getRefreshHandler(){
     	return handler;  	
     }
@@ -216,7 +238,13 @@ view.setTag(returnList);
     }
     
     
-    public class ProcessAppsAdapter extends BaseAdapter {
+    public Handler getMissPopHandler() {
+		return missPopHandler;
+	}
+	public void setMissPopHandler(Handler missPopHandler) {
+		this.missPopHandler = missPopHandler;
+	}
+	public class ProcessAppsAdapter extends BaseAdapter {
 
 		@Override
 		public int getCount() {
