@@ -43,6 +43,8 @@ public class CleanTaskFragment extends Fragment {
                     switch(msg.what)
                     {
                             case 0 : 
+                            	cleanList.clear();
+                            	returnList.clear();
                             	//adapter.notifyDataSetInvalidated();//重绘控件（还原到初始状态）
                             	appGetter = new CurrentInfoGetter(context);
                             	list = appGetter.getAllTasks(context); 

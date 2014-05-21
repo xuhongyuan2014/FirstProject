@@ -1,5 +1,6 @@
 package com.example.first.cleanUp;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
@@ -9,6 +10,7 @@ import com.example.first.R;
 import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.app.ActivityManager;
+import android.app.ActivityManager.RunningAppProcessInfo;
 import android.content.Context;
 import android.content.pm.PackageManager;
 import android.os.Bundle;
@@ -64,9 +66,15 @@ private TabHost tabHost;
 			    	  List<AppInfo> cleanListPro=(List<AppInfo>)cleanProFragment.getView().getTag();
 			    	  for (AppInfo info : cleanListPro) {			    		  
 			    		  // 杀死进程
-		                  activityManager.killBackgroundProcesses(info.getPackageName());
-		                  Toast.makeText(getApplicationContext(),
-	            					"杀死进程：(packageName："+info.getPackageName()+"appName:"+info.getAppName(), Toast.LENGTH_SHORT).show();
+			    		  List<AppInfo> processAppslist=new ArrayList();
+			    		  CurrentInfoGetter appGetter = new CurrentInfoGetter(getBaseContext());
+			        	processAppslist=appGetter.getAppByProcess(getBaseContext(),(RunningAppProcessInfo)info.getObject()); 
+			        	for (AppInfo processInfo : cleanListPro) {
+			        		activityManager.killBackgroundProcesses(processInfo.getPackageName());
+			                  Toast.makeText(getApplicationContext(),
+		            					"杀死进程：(packageName："+info.getPackageName()+"/appName:"+info.getAppName(), Toast.LENGTH_SHORT).show();
+			        	}
+		                  
 			    	  }
 			    	  handler=cleanProFragment.getRefreshHandler();
 			      break;
@@ -76,7 +84,7 @@ private TabHost tabHost;
 			    		  // 杀死进程
 		                  activityManager.killBackgroundProcesses(info.getPackageName());
 		                  Toast.makeText(getApplicationContext(),
-	            					"杀死进程：(packageName："+info.getPackageName()+"appName:"+info.getAppName(), Toast.LENGTH_SHORT).show();
+	            					"杀死进程：(packageName："+info.getPackageName()+"/appName:"+info.getAppName(), Toast.LENGTH_SHORT).show();
 			    	  }
 
                       handler=cleanSerFragment.getRefreshHandler();
@@ -88,7 +96,7 @@ private TabHost tabHost;
 			    		  // 杀死进程
 		                  activityManager.killBackgroundProcesses(info.getPackageName());
 		                  Toast.makeText(getApplicationContext(),
-	            					"杀死进程：(packageName："+info.getPackageName()+"appName:"+info.getAppName(), Toast.LENGTH_SHORT).show();
+	            					"杀死进程：(packageName："+info.getPackageName()+"/appName:"+info.getAppName(), Toast.LENGTH_SHORT).show();
 			    	  }
 			    	  handler=cleanTaskFragment.getRefreshHandler();
 			      break;
