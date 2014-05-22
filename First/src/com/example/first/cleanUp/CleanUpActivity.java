@@ -59,7 +59,7 @@ private TabHost tabHost;
 			public void onTabChanged(String tabId) {
 				
 				// TODO Auto-generated method stub
-				if(tabHost.getCurrentTab()==0) 
+				if(tabHost.getCurrentTab()!=0) 
 				{handler=cleanProFragment.getMissPopHandler();
 		    	  Message msg = new Message();
                   msg.what = 0;

@@ -9,6 +9,8 @@
         android:minSdkVersion="8"
         android:targetSdkVersion="19" />
     <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES"/>
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS"/>
 
     <application
         android:allowBackup="true"
@@ -35,6 +37,12 @@
         <activity android:name=".player.MyPlayer"></activity>
         <activity android:name="io.vov.vitamio.activity.InitActivity"></activity>
         <activity android:name=".player.PlayAddressActivity"></activity>
+        <receiver android:name=".broadcast.OutgoingCallReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.NEW_OUTGOING_CALL" />
+            </intent-filter>
+        </receiver>
+        <activity android:name=".broadcast.dialogActivity.OutgoingCallDialog"></activity>
 
     </application>
 
