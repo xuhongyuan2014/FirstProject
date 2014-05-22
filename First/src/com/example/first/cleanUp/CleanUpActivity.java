@@ -72,7 +72,7 @@ private TabHost tabHost;
 			        	for (AppInfo processInfo : cleanListPro) {
 			        		activityManager.killBackgroundProcesses(processInfo.getPackageName());
 			                  Toast.makeText(getApplicationContext(),
-		            					"杀死进程：(packageName："+info.getPackageName()+"/appName:"+info.getAppName(), Toast.LENGTH_SHORT).show();
+		            					"杀死进程：(packageName："+processInfo.getPackageName()+"/appName:"+info.getAppName(), Toast.LENGTH_SHORT).show();
 			        	}
 		                  
 			    	  }
