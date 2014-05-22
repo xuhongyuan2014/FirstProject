@@ -23,6 +23,7 @@ import android.view.Window;
 import android.widget.ImageButton;
 import android.widget.ListView;
 import android.widget.TabHost;
+import android.widget.TabHost.OnTabChangeListener;
 import android.widget.Toast;
 
 public class CleanUpActivity extends Activity{
@@ -52,6 +53,20 @@ private TabHost tabHost;
 		  tabHost.addTab(tabHost.newTabSpec("tab3").setIndicator("当前任务").setContent(R.id.fragment_task)); 
 		  //设置默认显示布局
 	      tabHost.setCurrentTab(0);
+	      tabHost.setOnTabChangedListener(new OnTabChangeListener() {
+			
+			@Override
+			public void onTabChanged(String tabId) {
+				
+				// TODO Auto-generated method stub
+				if(tabHost.getCurrentTab()==0) 
+				{handler=cleanProFragment.getMissPopHandler();
+		    	  Message msg = new Message();
+                  msg.what = 0;
+                  handler.sendMessage(msg);
+				}
+			}
+		});
 	      android.app.FragmentManager fm =getFragmentManager();
 	      cleanProFragment=(CleanProFragment) fm.findFragmentById(R.id.fragment_progress);
 	      cleanSerFragment=(CleanSerFragment) fm.findFragmentById(R.id.fragment_service);
